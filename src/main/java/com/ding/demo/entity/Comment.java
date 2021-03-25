@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * <p>
@@ -15,6 +17,8 @@ import lombok.EqualsAndHashCode;
  * @since 2021-03-23
  */
 @Data
+@Getter
+@Setter
 @EqualsAndHashCode(callSuper = false)
 public class Comment implements Serializable {
 
