@@ -1,5 +1,6 @@
 package com.ding.demo.service;
 
+import com.ding.common.Result;
 import com.ding.demo.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -13,4 +14,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface UserService extends IService<User> {
 
+    Result login(User user);
+
+    Result registerOrUpdate(User user);
 }

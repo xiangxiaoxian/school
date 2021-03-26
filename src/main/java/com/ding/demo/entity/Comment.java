@@ -1,8 +1,11 @@
 package com.ding.demo.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
+import java.util.List;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -59,6 +62,12 @@ public class Comment implements Serializable {
      * 逻辑删除
      */
     private Integer deleted;
+
+    /*
+    * 用户数据
+    * */
+    @TableField(exist = false)
+    private User user;
 
 
 }
